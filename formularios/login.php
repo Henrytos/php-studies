@@ -18,7 +18,7 @@
 //   
 //   echo 'você é'.$name.' do sexo '.$sexo.' da idade '.$year.' e aceitous os termos'.$termos;
 
-   if(!$_GET){
+   if(!$_GET ){
    header("location:http://localhost/php-studies/formularios/?name=");
    }
 

@@ -1,3 +1,11 @@
+<?php 
+if ($_POST ) {
+    echo $_POST["name"]."<br/>";
+    echo htmlspecialchars($_SERVER['PHP_SELF']);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +15,7 @@
 </head>
 <body>
     <!--          caminho.php             metodo http   -->
-    <form action="login.php" method="get">
+    <form action=<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>  method="post">
         <input type="text" placeholder="name:" name="name" id="">
         </br>
 
