@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzaria</title>
+    <!-- bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen antialised">
+    <header class="border-b border-zinc-800 px-5">
+      <nav class="h-20 flex items-center justify-between max-w-[1440px] m-auto">
+        <h2 class="font-semibold text-lg uppercase flex gap-1">
+          <span>pizzaria</span> <i data-lucide="pizza"></i>
+        </h2>
+        <a class="button is-danger is-dark" href="/index.html">
+          <i data-lucide="log-out"></i>
+          <span class="ml-1">Sair</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="w-full max-w-[1440px] p-5 m-auto mb-5">
+      <h1 class="title uppercase">Ver pedidos</h1>
+
+      <nav class="flex gap-3 mb-10">
+        <a href="./index.html">Criar pedidos</a>
+        <span>/</span>
+        <a href="./pedidos.html" class="font-semibold underline text-[#66d1ff]"
+          >ver Pedidos</a
+        >
+      </nav>
+
+      <table class="w-full table">
+        <thead>
+          <tr class="text-lg">
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Pedido</th>
+            <th>Valor</th>
+            <th>Troco</th>
+            <th>Entregue</th>
+          </tr>
+        </thead>
+        <tbody class="text-xm">
+          <tr>
+            <td>Henry</td>
+            <td>Rua papoula.....</td>
+            <td>Beirute</td>
+            <td>R$21,00</td>
+            <td>R$50,00</td>
+            <td class="flex items-center gap-1">
+              <span
+                class="w-2 h-2 bg-yellow-500 rounded-full inline-block translate-y-px"
+              ></span>
+              Pendente
+            </td>
+          </tr>
+          <tr>
+            <td>Nathalia</td>
+            <td>Rua violeta.....</td>
+            <td>Beirute</td>
+            <td>R$61,00</td>
+            <td>R$100,00</td>
+            <td class="flex items-center gap-1">
+              <span
+                class="w-2 h-2 bg-green-500 rounded-full inline-block translate-y-px"
+              ></span>
+              Concluido
+            </td>
+          </tr>
+          <tr>
+            <td>Mari</td>
+            <td>Rua rosas.....</td>
+            <td>Beirute</td>
+            <td>R$31,00</td>
+            <td>R$50,00</td>
+            <td class="flex items-center gap-1">
+              <span
+                class="w-2 h-2 bg-red-500 rounded-full inline-block translate-y-px"
+              ></span>
+              Cancelado
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
